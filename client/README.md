@@ -17,9 +17,9 @@ Rule-based suggested remarks generation via POST /api/epr/assist
 "Generate Suggested Remarks" button in both Create and Edit EPR modals
 
 
-
-
 Project Structure
+
+
 Airman-Academy/
 ├── client/                          # React + TypeScript frontend
 │   ├── src/
@@ -60,16 +60,18 @@ Airman-Academy/
     ├── .env                         # Environment variables
     └── package.json
 
-Prerequisites
 
+
+
+Prerequisites
 Node.js v18 or higher
 PostgreSQL installed and running
 A PostgreSQL database named airman_db (or update .env with your own)
 
-
 Setup & Running
 1. Clone the repository
-bashgit clone <your-repo-url>
+bash
+git clone <your-repo-url>
 cd Airman-Academy
 2. Configure the backend environment
 Open server/.env and update your database credentials:
@@ -80,7 +82,8 @@ DB_NAME=airman_db
 DB_USER=postgres
 DB_PASSWORD=your_password_here
 3. Install backend dependencies
-bashcd server
+bash
+cd server
 npm install
 4. Run migrations (creates the database tables)
 bashnpm run migrate
